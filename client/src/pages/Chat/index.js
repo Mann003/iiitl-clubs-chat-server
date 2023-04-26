@@ -18,7 +18,7 @@ export default function Chat({ location }) {
     const [message, setMessage] = useState('');
     const [messages, setMessages] = useState([]);
 
-    const ENDPONT = 'http://localhost:5000/'
+    const ENDPONT = 'https://iiitl-clubs-chat-server-production.up.railway.app'
 
     useEffect(() => {
         const { name, room } = queryString.parse(location.search);
