@@ -20,6 +20,8 @@ export default function Register({ history }) {
                 password
             });
 
+            console.log({ response })
+
             if(response.status !== 200){
                 return;
             }

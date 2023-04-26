@@ -8,6 +8,8 @@ module.exports = {
     async login(request, response) {
         const { email } = request.body;
 
+        console.log({  email})
+
         try{
             const user = await User.findOne({ email }).select('+password')
 
@@ -25,8 +27,9 @@ module.exports = {
 
             response.setHeader('authorization', token);
 
-            return response.status(200).send(user);
+            return response.status(200).send(user); 
         }catch(err){
+            console.log(err)
             return response.status(401).send(err);
         }
     },

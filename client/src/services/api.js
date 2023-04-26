@@ -1,7 +1,11 @@
 import axios from 'axios';
 
-const api = axios.create({
-    baseURL: 'https://react-chat--test.herokuapp.com/api/'
+export const api = axios.create({
+    baseURL: 'iiitl-clubs-chat-server-production.up.railway.app/api/'
+});
+
+export const loginapi = axios.create({
+    baseURL: 'iiitl-clubs-chat-server-production.up.railway.app/'
 });
 
 export default api;

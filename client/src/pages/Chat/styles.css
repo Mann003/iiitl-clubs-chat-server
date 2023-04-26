@@ -12,8 +12,9 @@
     justify-content: space-between;
     background: #FFFFFF;
     border-radius: 8px;
-    height: 90%;
+    height: 100%;
     width: 100%;
+    font-family:  "Poppins", sans-serif;
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
@@ -29,6 +30,6 @@
 
 @media (min-width: 480px) and (max-width: 1200px) {
     .container {
-        width: 60%;
+        width: 100%;
     }
 }
